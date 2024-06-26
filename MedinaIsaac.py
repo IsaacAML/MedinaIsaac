@@ -43,7 +43,7 @@ print(f'Saldo promedio: ${saldo_promedio:.3f}')
 # Crear archivo csv
 with open('reporte_saldos.csv', mode='w', newline='') as archivo_csv:
     writer = csv.writer(archivo_csv)
-    writer.writerow(['Cliente', - 'Saldo', - 'Clasificacion:'])
+    writer.writerow(['Cliente', 'Saldo', 'Clasificacion:'])
     writer.writerows([])
     for cliente, (categoria, saldo) in clasificacion.items():
         writer.writerow([cliente, saldo, categoria])
@@ -64,4 +64,3 @@ input()
 print('Gracias por usar Banco Santander, vuelva pronto...')
 
 
-# Fin del programa

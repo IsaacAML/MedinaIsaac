@@ -1,0 +1,16 @@
+Cliente,Saldo,Clasificacion:
+cliente 1,286.416,bajo
+cliente 2,783.563,alto
+cliente 3,44.403,bajo
+cliente 4,893.521,alto
+cliente 5,817.581,alto
+cliente 6,307.047,medio
+cliente 7,850.639,alto
+cliente 8,382.855,medio
+cliente 9,634.336,alto
+cliente 10,740.921,alto
+
+Estadisticas:
+Saldo mas alto,893.521
+Saldo mas bajo,44.403
+Saldo promedio,574.1282
