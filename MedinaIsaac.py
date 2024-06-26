@@ -32,4 +32,9 @@ saldo_promedio = statistics.mean(saldos_list)
 # Mostrar los saldos
 for cliente, (categoria, saldo) in clasificacion.items():
     print(f'{cliente}: ${saldo:.3f} - {categoria}')
-        
+    
+# Mostrar estadisticas
+print('\n Estadisticas:')
+print(f'Saldo mas alto: ${saldo_mas_alto:.3f}')
+print(f'Saldo mas bajo: ${saldo_mas_bajo:.3f}')
+print(f'Saldo promedio: ${saldo_promedio:.3f}')    
