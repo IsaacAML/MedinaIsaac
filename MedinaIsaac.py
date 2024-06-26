@@ -20,4 +20,12 @@ for cliente, saldo in saldos.items():
     elif 300 <= saldo < 600:
         clasificacion[cliente] = ('medio', saldo)
     else:
-        clasificacion[cliente] = ('alto', saldo)    
+        clasificacion[cliente] = ('alto', saldo)
+        
+
+# Calcular estadisticas
+saldos_list = list(saldos.values())
+saldo_mas_alto = max(saldos_list)
+saldo_mas_bajo = min(saldos_list)
+saldo_promedio = statistics.mean(saldos_list)
+    
