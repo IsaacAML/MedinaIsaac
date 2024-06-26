@@ -28,4 +28,8 @@ saldos_list = list(saldos.values())
 saldo_mas_alto = max(saldos_list)
 saldo_mas_bajo = min(saldos_list)
 saldo_promedio = statistics.mean(saldos_list)
-    
+
+# Mostrar los saldos
+for cliente, (categoria, saldo) in clasificacion.items():
+    print(f'{cliente}: ${saldo:.3f} - {categoria}')
+        
