@@ -38,3 +38,20 @@ print('\n Estadisticas:')
 print(f'Saldo mas alto: ${saldo_mas_alto:.3f}')
 print(f'Saldo mas bajo: ${saldo_mas_bajo:.3f}')
 print(f'Saldo promedio: ${saldo_promedio:.3f}')    
+
+
+# Crear archivo csv
+with open('reporte_saldos.csv', mode='w', newline='') as archivo_csv:
+    writer = csv.writer(archivo_csv)
+    writer.writerow(['Cliente', - 'Saldo', - 'Clasificacion:'])
+    writer.writerows([])
+    for cliente, (categoria, saldo) in clasificacion.items():
+        writer.writerow([cliente, saldo, categoria])
+        
+    writer.writerow([])
+    writer.writerow(['Estadisticas:'])
+    
+    writer.writerow(['Saldo mas alto', saldo_mas_alto])
+    writer.writerow(['Saldo mas bajo', saldo_mas_bajo])
+    writer.writerow(['Saldo promedio', saldo_promedio])
+print('\n Datos guardados en un archivo csv')
