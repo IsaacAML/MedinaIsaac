@@ -55,3 +55,10 @@ with open('reporte_saldos.csv', mode='w', newline='') as archivo_csv:
     writer.writerow(['Saldo mas bajo', saldo_mas_bajo])
     writer.writerow(['Saldo promedio', saldo_promedio])
 print('\n Datos guardados en un archivo csv')
+
+
+
+# Opcion para salir de banco santander
+print('\n Preciona cualquier tecla para salir')
+input()
+print('Gracias por usar Banco Santander, vuelva pronto...')
